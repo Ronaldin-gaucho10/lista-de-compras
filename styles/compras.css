@@ -1,0 +1,112 @@
+.compras{
+    align-items: center;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 1em;
+    justify-content: center;
+}
+.lista-compras,.lista-comprado{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor--rosa-fonte) ;
+}
+.linha-pontilhada {
+    border-top: 3px dotted var(--cor--rosa-fonte);
+    width: 100%;
+}
+.itens-comprar,.itens-comprados{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 1.5em;
+}
+.item1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+.parte1{
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.p1p1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.caixinha {
+    appearance: none; /* Remove a aparência padrão do checkbox */
+    -webkit-appearance: none;
+    width: 22px; /* Largura do checkbox */
+    height: 22px; /* Altura do checkbox */
+    border: 1px solid var(--cor-preto); /* Borda */
+    cursor: pointer;
+    position: relative; /* Adicionado para o posicionamento absoluto do ::after */
+    background-color: white; /* Cor de fundo inicial */
+    border-radius: 4px;
+}
+
+.caixinha:checked {
+    background-color: var(--cor-caixinha-marcada); /* Cor de fundo ao ser marcado */
+}
+
+.caixinha:checked::after {
+    content: '✔'; /* Conteúdo com o símbolo de verificação */
+    position: absolute;
+    color: white; /* Cor do "v" */
+    font-size: 16px; /* Tamanho do "v" */
+    left: 50%; /* Posiciona o início do conteúdo no centro horizontal */
+    top: 50%; /* Posiciona o início do conteúdo no centro vertical */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar o conteúdo */
+}
+.data{
+    font-size: 1em;
+}
+.p1p2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.riscado {
+    text-decoration: line-through;
+}
+.icones {
+    display: flex;
+    gap: 4px; /* Espaço entre os botões */
+}
+
+.buttonicon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    padding: 8px; /* Ajuste o padding para controlar o espaço ao redor do ícone */
+    background-color: var(--cor--rosa-fonte); /* Cor de fundo */
+    border-radius: 50%; /* Torna o botão circular */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.buttonicon img {
+    width: 12px; /* Tamanho do ícone */
+    height: 12px;
+}
+
+.buttonicon:hover {
+    background-color: var(--cor-hover); /* Cor de fundo ao passar o mouse */
+}
