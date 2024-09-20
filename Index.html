@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/guia.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main class="principal">
+            <img src="assets/comidaimg.png" alt="Logo da lista de compras" class="imagem">
+            <form class="part1">
+                <input type="text" id="pesquisa_alimentos" class="pesquisa_alimentos" placeholder="Digite o item que deseja adicionar.">
+                <button type="submit" id="button" class="buttonsalvar">Salvar item</button>
+            </form>
+        <section class="compras">
+            <div class="lista-compras">
+                <h2 class="titulo"> Lista de compras </h2>
+                <hr class="linha-pontilhada"></hr>
+                <ul class="itens-comprar">
+                    <p id="mensagem_lista_vazia">
+                        Sua lista está vazia. Adicione itens a ela para não esquecer nada na próxima compra!
+                    </p>
+                </ul>
+            </div>
+            <div class="lista-comprado">
+                <h2 class="titulo" style="display: none;"> Comprado </h2> <!-- Inicialmente oculto -->
+                <hr class="linha-pontilhada"></hr>
+                <ul class="itens-comprados"></ul>
+            </div>
+        </section>
+    </main>
+    <footer> Desenvolvido Por Yasmim </footer>
+    <script src="scripts1.js"></script>
+</body>
+</html>
